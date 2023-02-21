@@ -1,0 +1,35 @@
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+table {
+    border: 1px solid #E3B7B5;
+    padding: 10px;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+thead, tbody {
+    border: 2px solid #E3B7B5;
+}
+
+thead th {
+    background: linear-gradient(to bottom, rgb(227, 183, 181), rgb(255, 255, 255));
+}
+
+thead th:last-child {
+    width: 20%;
+}
+
+th, td {
+    padding: 5px;
+    border: 1px solid #E3B7B5;
+}
+
+td:last-child {
+    text-align: center;
+}
+
