@@ -19,7 +19,11 @@ code {
     monospace;
 }
 
-/*.container {*/
-/*  max-width: 800px;*/
-/*  margin: auto;*/
-/*}*/
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+button {
+  cursor: pointer;
+}

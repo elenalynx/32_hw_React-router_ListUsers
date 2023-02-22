@@ -1,7 +1,7 @@
 import {Route, Routes, NavLink} from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Users from "./pages/Users";
-import User from "./pages/Users/User";
+import Album from "./pages/Albums/Album";
 import Albums from "./pages/Albums";
 import Photos from "./pages/Photos/Photos";
 import styles from './App.module.css';
@@ -24,7 +24,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/users/*" element={<Users/>}/>
-                {/*<Route path="user:userId" element={<User/>}/>*/}
+                {/*<Route path="user:userId" element={<Album/>}/>*/}
                 {/*<Route path="user:userId/albums" element={<Albums/>}/>*/}
                 {/*<Route path="user:userId/albums/photos" element={<Photos/>}/>*/}
             </Routes>

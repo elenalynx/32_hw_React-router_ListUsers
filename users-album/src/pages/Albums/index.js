@@ -1,7 +1,7 @@
 import styles from "../../App.module.css";
 import {NavLink, Route, Routes} from "react-router-dom";
 import List from "../Users/List";
-import User from "../Users/User";
+import Album from "./Album";
 import Photos from "../Photos/Photos";
 
 export default function Albums () {
@@ -13,13 +13,13 @@ export default function Albums () {
             <nav>
                 <ul>
                     <li>
-                        <NavLink to="/" className={active}>Back</NavLink>
+                        <NavLink to="/users" className={active}>Back to users</NavLink>
                     </li>
                 </ul>
             </nav>
             <Routes>
-                <Route path="/" element={<List/>}/>
-                <Route path="/photos" element={<Photos/>}/>
+                <Route path="/" element={<Album/>}/>
+                <Route path="/albums/:id" element={<Photos/>}/>
             </Routes>
         </>
     );

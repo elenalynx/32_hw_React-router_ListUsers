@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import UserApi from "../../api/UserApi";
 import styles from "./List.module.css";
 import {NavLink, Route, Routes, useNavigate} from "react-router-dom";
-import User from "./User";
+import Album from "../Albums/Album";
 import Albums from "../Albums";
 
 export default function List() {
@@ -17,7 +17,8 @@ export default function List() {
     })
 
     function onClickBtn(user) {
-        navigate('/users/user')
+        console.log(user.id)
+        navigate(`/users/user/${user.id}`)
     }
 
     return (

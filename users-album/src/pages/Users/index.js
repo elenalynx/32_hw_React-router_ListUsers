@@ -1,6 +1,6 @@
 import {NavLink, Route, Routes} from "react-router-dom";
 import List from "./List";
-import User from "./User";
+import Album from "../Albums/Album";
 import styles from "../../App.module.css";
 
 export default function Users() {
@@ -13,13 +13,13 @@ export default function Users() {
             <nav>
                 <ul>
                     <li>
-                        <NavLink to="/" className={active}>Go to home</NavLink>
+                        <NavLink to="/" className={active}>Back to home</NavLink>
                     </li>
                 </ul>
             </nav>
             <Routes>
-                <Route path="/" element={<List/>}/>
-                <Route path="/user" element={<User/>}/>
+                <Route path="/" element={<List />}/>
+                <Route path="/user/:id" element={<Album/>}/>
             </Routes>
         </>
     );
