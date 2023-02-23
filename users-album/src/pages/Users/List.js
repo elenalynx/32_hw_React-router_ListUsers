@@ -1,9 +1,8 @@
 import {useEffect, useState} from "react";
 import UserApi from "../../api/UserApi";
 import styles from "./List.module.css";
-import {NavLink, Route, Routes, useNavigate} from "react-router-dom";
-import Album from "../Albums/Album";
-import Albums from "../Albums";
+import {useNavigate} from "react-router-dom";
+
 
 export default function List() {
     const [list, setList] = useState([]);
@@ -11,10 +10,10 @@ export default function List() {
 
     useEffect(() => {
         UserApi.getList('users')
-            .then((list) => {
-                setList(list)
+            .then((res) => {
+                setList(res)
             })
-    })
+    }, [])
 
     function onClickBtn(user) {
         console.log(user.id)
@@ -22,12 +21,11 @@ export default function List() {
     }
 
     return (
-        // <>
         <div className={styles.container}>
             <table>
                 <thead>
                 <tr>
-                    <th>User</th>
+                    <th>Users</th>
                     <th>Action</th>
                 </tr>
 

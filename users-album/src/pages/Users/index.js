@@ -18,8 +18,8 @@ export default function Users() {
                 </ul>
             </nav>
             <Routes>
-                <Route path="/" element={<List />}/>
-                <Route path="/user/:id" element={<Album/>}/>
+                <Route path="/" element={<List/>}/>
+                <Route path="/user/:idUser/*" element={<Album/>}/>
             </Routes>
         </>
     );

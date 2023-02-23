@@ -1,0 +1,9 @@
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+img {
+    width: 20%;
+    height: auto;
+}

@@ -1,8 +1,7 @@
 import styles from "../../App.module.css";
 import {NavLink, Route, Routes} from "react-router-dom";
-import List from "../Users/List";
 import Album from "./Album";
-import Photos from "../Photos/Photos";
+import Photo from "../Photos/Photo";
 
 export default function Albums () {
     const active = ({isActive}) =>
@@ -19,7 +18,7 @@ export default function Albums () {
             </nav>
             <Routes>
                 <Route path="/" element={<Album/>}/>
-                <Route path="/albums/:id" element={<Photos/>}/>
+                <Route path="/album/:idAlbum/*" element={<Photo/>}/>
             </Routes>
         </>
     );
