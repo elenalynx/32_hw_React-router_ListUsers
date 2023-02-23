@@ -17,7 +17,7 @@ export default function List() {
 
     function onClickBtn(user) {
         console.log(user.id)
-        navigate(`/users/user/${user.id}`)
+        navigate(`/users/${user.id}`)
     }
 
     return (

@@ -4,7 +4,7 @@ import Photo from "../Photos/Photo";
 
 export default function Photos () {
     let {idUser} = useParams();
-    const backUrl = `/users/user/${idUser}`
+    const backUrl = `/users/${idUser}`
     const active = ({isActive}) =>
         isActive ? styles.active : undefined
 

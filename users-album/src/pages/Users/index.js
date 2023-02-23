@@ -19,7 +19,7 @@ export default function Users() {
             </nav>
             <Routes>
                 <Route path="/" element={<List/>}/>
-                <Route path="/user/:idUser/*" element={<Album/>}/>
+                <Route path="/:idUser/*" element={<Album/>}/>
             </Routes>
         </>
     );

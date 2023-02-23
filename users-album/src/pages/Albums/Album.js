@@ -15,11 +15,11 @@ export default function Album() {
             .then((res) => {
                 setUser(res)
             })
-    }, [])
+    }, [idUser])
 
     function onClickBtn(albums) {
         console.log(albums.id)
-        navigate(`/users/user/${idUser}/album/${albums.id}`)
+        navigate(`/users/${idUser}/album/${albums.id}`)
     }
 
     return (
